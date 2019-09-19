@@ -24,4 +24,7 @@ class Song
     @@artists.uniq
   end 
   
+  def 
+  
+  end
 end
