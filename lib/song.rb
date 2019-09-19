@@ -37,7 +37,7 @@ class Song
   end
   
   def self.artist_count
-    artist_count = @@artist.each_with_object(0).to_h
+    artist_count = @@artists.each_with_object(0).to_h
     @@artists.each {|artist| 
     artist_count[artist] += 1
       }
