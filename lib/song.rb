@@ -10,6 +10,7 @@ class Song
   end
 
   def initialize 
+    @@song_count
   end 
 
 
