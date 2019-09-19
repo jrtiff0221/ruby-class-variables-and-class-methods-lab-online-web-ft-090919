@@ -29,10 +29,7 @@ class Song
     @@genres.each { |genre|
       puts "genre #{genre}"
       puts "count %{genre_count}"
-      if !genre_count[genre] 
-        genre_count[genre] = 0
-      end
-      genre_count[genre] += 1 
+      genre_count[genre] = !genre_count[genre] ? 0 : genre_count[genre] += 1 
     }
     genre_count
   end
