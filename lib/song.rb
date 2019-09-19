@@ -30,15 +30,19 @@ class Song
     # genre_count = { "rock" => 0, "rap" => 0 }
     genre_count = @@genres.each_with_object(0).to_h
 
-    @@genres.each do|genre|
+    @@genres.each  {|genre|
       genre_count[genre] += 1 
-    end
+    }
     genre_count
   end
   
   def self.artist_count
     artist_count = @@artist.each_with_object(0).to_h
-    @@artist.each { }
+    @@artist.each {|artist| 
+    artist_count[artist] += 1
+      }
+
+    artist_count
     
   end
   
