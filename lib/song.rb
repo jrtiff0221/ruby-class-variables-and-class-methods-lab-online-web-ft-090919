@@ -25,7 +25,8 @@ class Song
   end 
   
   def self.genre_count
-    genre_count = {}
+    genre_count = Hash[@@genres.product([0])]
+    
     @@genres.each { |genre|
       puts "genre #{genre}"
       puts "count %{genre_count}"
