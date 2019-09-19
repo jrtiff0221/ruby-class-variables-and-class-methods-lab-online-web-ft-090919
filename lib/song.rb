@@ -10,8 +10,10 @@ class Song
   end
 
   def initialize 
-    @@song_count
+    @@song_count += 1
   end 
+  
+  def 
 
 
 end
